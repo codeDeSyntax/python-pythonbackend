@@ -1,0 +1,4 @@
+{% for link in links %}
+{% csrf_token %}
+<a href="{% 'link' link %}">{{link}}</a>
+{% endfor %}
